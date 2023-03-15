@@ -1,0 +1,163 @@
+{
+	"suggest.labelMaxLength": 30,
+	"suggest.noselect": true,
+	"suggest.completionItemKindLabels": {
+		"function": "func",
+		"method": "method",
+		"variable": "var",
+		"constant": "const",
+		"struct": "struct",
+		"class": "composit",
+		"interface": "interface",
+		"text": "text",
+		"enum": "enum",
+		"enumMember": "Menum",
+		"module": "module",
+		"color": "color",
+		"property": "prpt",
+		"field": "field",
+		"unit": "unit",
+		"file": "file",
+		"value": "value",
+		"event": "event",
+		"folder": "folder",
+		"keyword": "keyword",
+		"snippet": "snippet",
+		"operator": "operator",
+		"reference": "reference",
+		"typeParameter": "typeParameter",
+		"default": "default"
+	},
+	"hover.target": "float",
+	"hover.floatConfig": {
+		"border": true,
+		"shadow": true,
+		"maxWidth": 1920
+	},
+	"languageserver": {
+		"solidity": {
+			"command": "/usr/local/bin/solc",
+			"filetypes": [
+				"solidity"
+			],
+			"args": [
+				"--lsp"
+			],
+			"trace.server": "verbose",
+		},
+		"golangci-lint-languageserver": {
+			"command": "golangci-lint-langserver",
+			"filetypes": [
+				"go"
+			],
+			"initializationOptions": {
+				"command": [
+					"golangci-lint",
+					"run",
+					"--enable-all",
+					"--disable",
+					"lll",
+					"--disable",
+					"godox",
+					"--disable",
+					"exhaustivestruct",
+					"--disable",
+					"exhaustruct",
+					"--disable",
+					"wrapcheck",
+					"--disable",
+					"forcetypeassert",
+					"--disable",
+					"tagliatelle",
+					"--disable",
+					"dupl",
+					"--disable",
+					"gofumpt",
+					"--disable",
+					"goimports",
+					"--disable",
+					"gomnd",
+					"--disable",
+					"goerr113",
+					"--disable",
+					"varnamelen",
+					"--disable",
+					"nonamedreturns",
+					"--disable",
+					"gochecknoglobals",
+					"--disable",
+					"paralleltest",
+					"--disable",
+					"errorlint",
+					"--disable",
+					"gochecknoinits",
+					"--out-format",
+					"json",
+					"--issues-exit-code=1"
+				]
+			}
+		}
+	},
+	"git.addGBlameToVirtualText": false,
+	"git.addGBlameToBufferVar": true,
+	"git.enableGlobalStatus": true,
+	"git.virtualTextPrefix": "  ",
+	"git.signPriority": 1,
+	"git.addedSign.text": "│",
+	"git.changedSign.text": "│",
+	"git.changeRemovedSign.text": "┃",
+	"git.removedSign.text": "┃",
+	"git.topRemovedSign.text": "┃",
+	"git.addedSign.hlGroup": "GitGutterAdd",
+	"git.changedSign.hlGroup": "GitGutterChange",
+	"git.removedSign.hlGroup": "GitGutterDelete",
+	"git.topRemovedSign.hlGroup": "GitGutterDelete",
+	"git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
+	"git.untrackedDecorator": "  ",
+	"git.changedDecorator": " ",
+	"git.branchCharacter": "",
+	"git.showCommitInFloating": true,
+	"git.enableGutters": true,
+	"explorer.icon.enableNerdfont": true,
+	"explorer.icon.selected": "",
+	"explorer.icon.collapsed": " ",
+	"explorer.icon.expanded": " ",
+	"explorer.floating.position": "left-center",
+	"explorer.git.enable": true,
+	"explorer.git.icon.rootStatus.modified": " ",
+	"explorer.enableFloatinput": true,
+	"explorer.floating.border.chars": [
+		"─",
+		"│",
+		"─",
+		"│",
+		"╭",
+		"╮",
+		"╯",
+		"╰"
+	],
+	"explorer.floating.contentWidth": 80,
+	"explorer.git.icon.status.modified": "+",
+	"explorer.git.icon.status.unmodified": " ",
+	"explorer.git.icon.status.untracked": "u",
+	"explorer.icon.customIcons": {
+		"icons": {
+			"folderClosed": {
+				"code": "",
+				"color": "#00afaf"
+			},
+			"folderOpened": {
+				"code": "",
+				"color": "#00afaf"
+			}
+		}
+	},
+	//////////////////
+	"diagnostic.errorSign": "",
+	"diagnostic.warningSign": "",
+	"diagnostic.floatConfig": {
+		"border": true,
+		"rounded": true,
+	},
+	"python.linting.pep8Enabled": true,
+}
