@@ -31,8 +31,7 @@
 	"hover.target": "float",
 	"hover.floatConfig": {
 		"border": true,
-		"shadow": true,
-		"maxWidth": 1920
+		"maxWidth": 1920,
 	},
 	"languageserver": {
 		"solidity": {

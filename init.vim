@@ -62,8 +62,8 @@ colorscheme OceanicNext
 " Press Leader+Space to turn off highlighting and clear any message already displayed.
 nnoremap <leader><Space> :nohlsearch<Bar>:echo<CR>
 
-nnoremap " :vertical resize -1<CR>
-nnoremap ' :vertical resize +1<CR>
+nnoremap " :vertical resize -5<CR>
+nnoremap ' :vertical resize +5<CR>
 nnoremap > :res -1<CR>
 nnoremap < :res +1<CR>
 
