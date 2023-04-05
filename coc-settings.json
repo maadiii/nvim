@@ -90,6 +90,8 @@
 					"errorlint",
 					"--disable",
 					"gochecknoinits",
+					"--disable",
+					"ireturn",
 					"--out-format",
 					"json",
 					"--issues-exit-code=1"

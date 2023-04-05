@@ -27,9 +27,20 @@ require("todo-comments").setup {
 	signs = true, -- show icons in the signs column
 	sign_priority = 10, -- sign priority
 	-- keywords recognized as todo comments
-	keywords = {
-		TODO = { icon = "", color = "info" },
-	},
+    keywords = {
+      FIX = {
+        icon = " ", -- icon used for the sign, and in search results
+        color = "error", -- can be a hex color, or a named color (see below)
+        alt = { "FIXME", "BUG", "FIXIT", "ISSUE" }, -- a set of other keywords that all map to this FIX keywords
+        -- signs = false, -- configure signs for some keywords individually
+      },
+      TODO = { icon = " ", color = "info" },
+      HACK = { icon = " ", color = "warning" },
+      WARN = { icon = " ", color = "warning", alt = { "WARNING", "XXX" } },
+      PERF = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
+      NOTE = { icon = " ", color = "hint", alt = { "INFO" } },
+      --TEST = { icon = "⏲ ", color = "test", alt = { "TESTING", "PASSED", "FAILED" } },
+    },
 	merge_keywords = true, -- when true, custom keywords will be merged with the defaults
 	-- highlighting of the line containing the todo comment
 	-- * before: highlights before the keyword (typically comment characters)
@@ -99,22 +110,24 @@ require("todo-comments").setup {
 			 height = 16,
 		 },
 		 log_options = {
-			single_file = {
-				max_count = 512,      -- Limit the number of commits
-				follow = true,       -- Follow renames (only for single file)
-				all = false,          -- Include all refs under 'refs/' including HEAD
-				merges = false,       -- List only merge commits
-				no_merges = false,    -- List no merge commits
-				reverse = false,      -- List commits in reverse order
-			},
-			multi_file = {
-				max_count = 128,      -- Limit the number of commits
-				follow = false,       -- Follow renames (only for single file)
-				all = false,          -- Include all refs under 'refs/' including HEAD
-				merges = false,       -- List only merge commits
-				no_merges = false,    -- List no merge commits
-				reverse = false,      -- List commits in reverse order
-			},
+		   git = {
+			 single_file = {
+			 	max_count = 512,      -- Limit the number of commits
+			 	follow = true,       -- Follow renames (only for single file)
+			 	all = false,          -- Include all refs under 'refs/' including HEAD
+			 	merges = false,       -- List only merge commits
+			 	no_merges = false,    -- List no merge commits
+			 	reverse = false,      -- List commits in reverse order
+			 },
+			 multi_file = {
+			 	max_count = 128,      -- Limit the number of commits
+			 	follow = false,       -- Follow renames (only for single file)
+			 	all = false,          -- Include all refs under 'refs/' including HEAD
+			 	merges = false,       -- List only merge commits
+			 	no_merges = false,    -- List no merge commits
+			 	reverse = false,      -- List commits in reverse order
+			 },
+		   }
 		 },
 	  },
 	  default_args = {    -- Default args prepended to the arg-list for the listed commands
