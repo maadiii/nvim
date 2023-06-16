@@ -54,4 +54,5 @@ Plug 'mhartington/oceanic-next'
 " Plug 'rcarriga/nvim-notify'
 Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
 Plug 'psf/black', { 'branch': 'main' }
+Plug 'mxw/vim-jsx'
 call plug#end()

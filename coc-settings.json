@@ -32,6 +32,7 @@
 	"hover.floatConfig": {
 		"border": true,
 		"maxWidth": 1920,
+		"shadow": true
 	},
 	"languageserver": {
 		"solidity": {
@@ -160,5 +161,4 @@
 		"border": true,
 		"rounded": true,
 	},
-	"python.linting.pep8Enabled": true,
 }

@@ -1,14 +1,14 @@
-nnoremap  <silent><nowait> <space>a       :<C-u>Telescope coc diagnostics <CR>
-nnoremap  <silent><nowait> <space>b       :<C-u>Telescope coc workspace_diagnostics <CR>
-nnoremap  <silent><nowait> <space>c       :<C-u>Telescope coc commands <CR>
-nnoremap  <silent><nowait> <space>o       :<C-u>Telescope coc document_symbols <CR>
-nnoremap  <silent><nowait> <space>s       :<C-u>Telescope coc workspace_symbols <CR>
+nnoremap  <silent><nowait> <space>a :<C-u>Telescope coc diagnostics theme=dropdown<CR>
+nnoremap  <silent><nowait> <space>b :<C-u>Telescope coc workspace_diagnostics theme=dropdown<CR>
+nnoremap  <silent><nowait> <space>c :<C-u>Telescope coc commands theme=dropdown<CR>
+nnoremap  <silent><nowait> <space>o :<C-u>Telescope coc document_symbols theme=dropdown<CR>
+nnoremap  <silent><nowait> <space>s :<C-u>Telescope coc workspace_symbols theme=dropdown<CR>
 
-nmap <silent><nowait> gD :<C-u>Telescope coc definitions<CR>
-nmap <silent><nowait> gy :<C-u>Telescope coc declarations<CR>
-nmap <silent><nowait> gi :<C-u>Telescope coc implementations <CR>
-nmap <silent><nowait> gr :<C-u>Telescope coc references <CR>
-nmap <silent><nowait> gc :<C-u>Telescope resume<CR>
+nmap <silent><nowait> gD :<C-u>Telescope coc definitions theme=dropdown<CR>
+nmap <silent><nowait> gy :<C-u>Telescope coc declarations theme=dropdown<CR>
+nmap <silent><nowait> gi :<C-u>Telescope coc implementations theme=dropdown<CR>
+nmap <silent><nowait> gr :<C-u>Telescope coc references theme=dropdown<CR>
+nmap <silent><nowait> gc :<C-u>Telescope resume theme=dropdown<CR>
 
 nmap <silent> gh :call CocActionAsync('doHover')<CR>
 nmap <silent> gs :call CocActionAsync('jumpDefinition', 'split')<CR>

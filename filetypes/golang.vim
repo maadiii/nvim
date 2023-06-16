@@ -13,7 +13,7 @@ augroup go
   " :GoCoverageToggle
   autocmd FileType go nmap <leader>c :w<CR><Plug>(go-coverage-toggle)
 
-  autocmd FileType go nmap <leader>r :w<CR>:!go run .
+  autocmd FileType go nmap <leader>r :w<CR><Plug>(go-run)
 augroup END
 
 " build_go_files is a custom function that builds or compiles the test file.
