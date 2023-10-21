@@ -26,19 +26,19 @@ let g:tagbar_type_go = {
     \ 'ctagsargs' : '-sort -silent'
     \ }
 
-" let g:tagbar_type_rust = {
-"                 \ 'ctagstype' : 'rust',
-"                 \ 'kinds' : [
-"                 \'T:types',
-"                 \'f:functions',
-"                 \'g:enumerations',
-"                 \'s:structures',
-"                 \'m:modules',
-"                 \'c:constants',
-"                 \'t:traits',
-"                 \'i:trait implementations',
-"                 \ ]
-"                 \ }
+let g:tagbar_type_rust = {
+                \ 'ctagstype' : 'rust',
+                \ 'kinds' : [
+                \'T:types',
+                \'f:functions',
+                \'g:enumerations',
+                \'s:structures',
+                \'m:modules',
+                \'c:constants',
+                \'t:traits',
+                \'i:trait implementations',
+                \ ]
+                \ }
 
 " To toggle tagbar enable/disable
 nmap <F8> :TagbarToggle<CR>

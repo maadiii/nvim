@@ -6,9 +6,9 @@ source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/indentline.vim
 source ~/.config/nvim/mapping.vim
 source ~/.config/nvim/startify.vim
+source ~/.config/nvim/filetypes/golang.vim
 source ~/.config/nvim/filetypes/rust.vim
 source ~/.config/nvim/filetypes/python.vim
-source ~/.config/nvim/filetypes/golang.vim
 source ~/.config/nvim/tagbar.vim
 source ~/.config/nvim/lua.vim
 source ~/.config/nvim/molokai.vim
@@ -78,3 +78,4 @@ if has("nvim")
   au TermOpen * tnoremap <Esc> <c-\><c-n>
   au FileType fzf tunmap <Esc>
 endif
+

@@ -1,10 +1,10 @@
-autocmd FileType rs map <leader>b :Cclean<CR>:Cbuild<CR>
-autocmd FileType rs map <leader>r :Crun<CR>
-autocmd FileType rs map <leader>c :Ccheck<CR>
-autocmd FileType rs map <leader>l :Cclean<CR>
-autocmd FileType rs map <leader>u :Cupdate<CR>
-autocmd FileType rs map <leader>t :RustTest<CR>
-autocmd FileType rs map <leader>T :Ctest<CR>
+au BufRead *.rs nmap <leader>b :Cbuild<CR>
+au BufRead *.rs nmap <leader>r :Crun<CR>
+au BufRead *.rs nmap <leader>c :Ccheck<CR>
+au BufRead *.rs nmap <leader>l :Cclean<CR>
+au BufRead *.rs nmap <leader>u :Cupdate<CR>
+au BufRead *.rs nmap <leader>t :RustTest<CR>
+au BufRead *.rs nmap <leader>T :Ctest<CR>
 
 let g:rustfmt_autosave = 1
 let g:rustfmt_emit_files = 1

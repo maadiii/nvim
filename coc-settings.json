@@ -1,4 +1,6 @@
 {
+	"python.linting.pep8Enabled": true,
+	"python.linting.lintOnSave": true,
 	"suggest.labelMaxLength": 30,
 	"suggest.noselect": true,
 	"suggest.completionItemKindLabels": {
@@ -91,6 +93,8 @@
 					"errorlint",
 					"--disable",
 					"gochecknoinits",
+					"--disable",
+					"cyclop",
 					"--disable",
 					"ireturn",
 					"--out-format",
