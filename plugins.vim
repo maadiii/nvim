@@ -55,4 +55,9 @@ Plug 'mhartington/oceanic-next'
 Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
 Plug 'psf/black', { 'branch': 'main' }
 Plug 'mxw/vim-jsx'
+Plug 'mfussenegger/nvim-dap'
+Plug 'leoluz/nvim-dap-go'
+Plug 'puremourning/vimspector'
+Plug 'ray-x/web-tools.nvim'
+Plug 'mattn/emmet-vim'
 call plug#end()

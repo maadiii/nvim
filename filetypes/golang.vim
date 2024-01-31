@@ -63,8 +63,9 @@ let g:go_decls_includes = "func,type"
 nmap gpp :DlvAddBreakpoint<CR>
 nmap gpd :DlvRemoveBreakpoint<CR>
 nmap gpc :DlvClearAll<CR>
-nmap gll :DlvDebug --wd=../../
-nmap glt :DlvTest --wd=../../
+nmap gll :DlvDebug --wd=../
+nmap glf :DlvDebug --wd=../.. --build-flags="-buildvcs=true -tags '' -trimpath -ldflags='-extldflags=-static -buildid=\"\" -X github.com/falomen-app/backend/constant.compileTime=2024-01-13T11:05:29+00:00' -gcflags=all='-N -l -L'"
+nmap glt :DlvTest --wd=../
 let g:delve_new_command="new"
 " coc
 autocmd FileType go nmap <leader>tap :CocCommand go.tags.add.prompt<CR>
