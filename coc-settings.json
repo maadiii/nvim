@@ -43,7 +43,7 @@
 			"args": [
 				"--lsp"
 			],
-			"trace.server": "verbose",
+			"trace.server": "verbose"
 		},
 		// "golangci-lint-languageserver": {
 		// 	"command": "golangci-lint-langserver",
@@ -57,6 +57,8 @@
 		// 			"--enable-all",
 		// 			"--disable",
 		// 			"lll",
+		// 			"--disable",
+		// 			"mnd",
 		// 			"--disable",
 		// 			"godox",
 		// 			"--disable",
@@ -101,33 +103,35 @@
 		// 			"ireturn",
 		// 			"--disable",
 		// 			"deadcode",
+		// 			"--disable",
+		// 			"nakedret",
 		// 			"--out-format",
 		// 			"json",
 		// 			"--issues-exit-code=1"
 		// 		]
 		// 	}
-		// }
+		// },
 	},
-	"git.addGBlameToVirtualText": false,
-	"git.addGBlameToBufferVar": true,
-	"git.enableGlobalStatus": true,
-	"git.virtualTextPrefix": "  ",
-	"git.signPriority": 1,
-	"git.addedSign.text": "│",
-	"git.changedSign.text": "│",
-	"git.changeRemovedSign.text": "┃",
-	"git.removedSign.text": "┃",
-	"git.topRemovedSign.text": "┃",
-	"git.addedSign.hlGroup": "GitGutterAdd",
-	"git.changedSign.hlGroup": "GitGutterChange",
-	"git.removedSign.hlGroup": "GitGutterDelete",
-	"git.topRemovedSign.hlGroup": "GitGutterDelete",
-	"git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
-	"git.untrackedDecorator": "  ",
-	"git.changedDecorator": " ",
-	"git.branchCharacter": "",
-	"git.showCommitInFloating": true,
-	"git.enableGutters": true,
+	// "git.addGBlameToVirtualText": false,
+	// "git.addGBlameToBufferVar": true,
+	// "git.enableGlobalStatus": true,
+	// "git.virtualTextPrefix": "  ",
+	// "git.signPriority": 1,
+	// "git.addedSign.text": "│",
+	// "git.changedSign.text": "│",
+	// "git.changeRemovedSign.text": "┃",
+	// "git.removedSign.text": "┃",
+	// "git.topRemovedSign.text": "┃",
+	// "git.addedSign.hlGroup": "GitGutterAdd",
+	// "git.changedSign.hlGroup": "GitGutterChange",
+	// "git.removedSign.hlGroup": "GitGutterDelete",
+	// "git.topRemovedSign.hlGroup": "GitGutterDelete",
+	// "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
+	// "git.untrackedDecorator": "  ",
+	// "git.changedDecorator": " ",
+	// "git.branchCharacter": "",
+	// "git.showCommitInFloating": true,
+	// "git.enableGutters": true,
 	"explorer.icon.enableNerdfont": true,
 	"explorer.icon.selected": "",
 	"explorer.icon.collapsed": " ",
@@ -162,12 +166,12 @@
 			}
 		}
 	},
-	//////////////////
+	"diagnostic.checkCurrentLine": true,
 	"diagnostic.errorSign": "",
 	"diagnostic.warningSign": "",
 	"diagnostic.floatConfig": {
 		"border": true,
-		"rounded": true,
-	},
+		"rounded": true
+	}
 }
 

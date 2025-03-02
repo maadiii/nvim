@@ -44,8 +44,8 @@ au BufNewFile,BufRead *.go
 let g:go_fmt_command = 'gofumpt'
 " let g:go_fmt_command = 'gofmt'
 " let g:go_fmt_command = 'goimports'
-au BufWritePre,FileWritePre *.go :GoFmt
-au BufWritePre,FileWritePre *.go :GoImports
+" au BufWritePre,FileWritePre *.go :GoFmt
+" au BufWritePre,FileWritePre *.go :GoImports
 nmap <C-g> :GoDecls<cr>
 nmap gpi :GoImpl<cr>
 
@@ -60,12 +60,10 @@ let g:go_highlight_generate_tags = 1
 let g:go_decls_includes = "func,type"
 
 " Delv
-nmap gpp :DlvAddBreakpoint<CR>
-nmap gpd :DlvRemoveBreakpoint<CR>
+nmap gpa :DlvAddBreakpoint<CR>
+nmap gpr :DlvRemoveBreakpoint<CR>
 nmap gpc :DlvClearAll<CR>
 nmap gll :DlvDebug --wd=../
-nmap glf :DlvDebug --wd=../.. --build-flags="-buildvcs=true -tags '' -trimpath -ldflags='-extldflags=-static -buildid=\"\" -X github.com/falomen-app/backend/constant.compileTime=2024-01-13T11:05:29+00:00' -gcflags=all='-N -l -L'"
-nmap glt :DlvTest --wd=../
 let g:delve_new_command="new"
 " coc
 autocmd FileType go nmap <leader>tap :CocCommand go.tags.add.prompt<CR>
@@ -100,3 +98,4 @@ autocmd BufWritePost *.go silent! !gci write %:p
 
 let g:go_gopls_enabled = 0
 let g:go_def_mapping_enabled=0
+let g:delve_breakpoint_sign="🔴"

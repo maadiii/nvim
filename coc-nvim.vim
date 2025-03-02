@@ -20,9 +20,9 @@ nmap <C-n> <Plug>(coc-diagnostic-next)
 nmap <C-m> <Plug>(coc-diagnostic-prev)
 
 " Formatting selected code.
+" map gf :call CocAction('format')<CR>
 xmap gf  <Plug>(coc-format-selected)
 nmap <LEADER>qf  <Plug>(coc-fix-current)
-map gf :call CocAction('format')<CR>
 
 map gog :CocCommand tsserver.goToSourceDefinition<CR>
 map gof :CocCommand tsserver.findAllFileReferences<CR>

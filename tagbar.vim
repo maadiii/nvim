@@ -41,4 +41,4 @@ let g:tagbar_type_rust = {
                 \ }
 
 " To toggle tagbar enable/disable
-nmap <leader>x :TagbarToggle<CR>
+nmap <F8> :TagbarToggle<CR>

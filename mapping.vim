@@ -60,10 +60,10 @@ nnoremap <leader>a :cclose<CR>
 
 nnoremap <leader>B :Buffers<CR>
 
-" if has("nvim")
-"   au TermOpen * tnoremap <Esc> <c-\><c-n>
-"   au FileType fzf tunmap <Esc>
-" endif
+if has("nvim")
+  au TermOpen * tnoremap <Esc> <c-\><c-n>
+  au FileType fzf tunmap <Esc>
+endif
 
 if has('nvim-0.4.0') || has('patch-8.2.0750')
   nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
