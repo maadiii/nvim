@@ -83,7 +83,7 @@ au BufNewFile,BufRead *.ts
     \ setlocal expandtab |
     \ setlocal autoindent |
     \ setlocal fileformat=unix |
-	\ set filetype=javascriptreact
+	\ set filetype=typescript
 
 
 au BufRead *.js nnoremap <silent><leader>s :NodeInspectStart<cr>
