@@ -13,7 +13,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 Plug 'danro/rename.vim' 
 Plug 'HerringtonDarkholme/yats.vim'
-" Plug 'maxmellon/vim-jsx-pretty'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'cespare/vim-toml'
 Plug 'briones-gabriel/darcula-solid.nvim'
 Plug 'doums/darcula'
@@ -50,7 +50,7 @@ Plug 'tomlion/vim-solidity'
 Plug 'mhartington/oceanic-next'
 Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
 Plug 'psf/black', { 'branch': 'main' }
-" Plug 'mxw/vim-jsx'
+Plug 'mxw/vim-jsx'
 Plug 'mfussenegger/nvim-dap'
 Plug 'leoluz/nvim-dap-go'
 Plug 'puremourning/vimspector'
