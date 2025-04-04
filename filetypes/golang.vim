@@ -64,6 +64,7 @@ nmap gpa :DlvAddBreakpoint<CR>
 nmap gpr :DlvRemoveBreakpoint<CR>
 nmap gpc :DlvClearAll<CR>
 nmap gll :DlvDebug --wd=../
+nmap glt :DlvTest
 let g:delve_new_command="new"
 " coc
 autocmd FileType go nmap <leader>tap :CocCommand go.tags.add.prompt<CR>
