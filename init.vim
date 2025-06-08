@@ -70,3 +70,6 @@ nnoremap < :res +1<CR>
 let g:rainbow_active = 1
 
 au BufNewFile,BufRead *.ejs set filetype=html
+
+inoremap <silent><expr> <Tab> pumvisible() ? coc#pum#next(1) : "\<Tab>"
+inoremap <silent><expr> <S-Tab> pumvisible() ? coc#pum#prev(1) : "\<S-Tab>"

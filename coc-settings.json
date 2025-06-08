@@ -1,6 +1,7 @@
 {
   "coc.preferences.formatOnSave": true,
   "coc.preferences.formatOnType": true,
+  "go.goplsOptions": { "gofumpt": true },
   "signature.triggerSignatureWait": 200,
   "signature.floatConfig": {
     "border": true,
@@ -8,6 +9,8 @@
     "maxWidth": 2000,
     "shadow": true
   },
+  "suggest.detailField": "abbr",
+  "suggest.removeDuplicateItems": true,
   "suggest.labelMaxLength": 30,
   "suggest.noselect": true,
   "suggest.completionItemKindLabels": {
