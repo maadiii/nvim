@@ -18,8 +18,7 @@ set noshowmode  " to get rid of thing like --INSERT--
 set noshowcmd  " to get rid of display of last command
 set shortmess+=F  " to get rid of the file name displayed in the command line bar
 set noarabicshape
-syntax enable
-set scrolloff=7
+set scrolloff=10
 set cursorline
 set number relativenumber
 set nowrap
@@ -31,6 +30,9 @@ set splitright
 set undofile
 set mouse=
 set guicursor=n-v-c-sm:block
+
+syntax enable
+syntax on
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -55,8 +57,7 @@ set nofoldenable
 
 set t_Co=256
 set termguicolors
-let g:rehash256 = 1
-colorscheme onedark
+colorscheme gruvbox
 
 " Press Leader+Space to turn off highlighting and clear any message already displayed.
 nnoremap <leader><Space> :nohlsearch<Bar>:echo<CR>
@@ -67,3 +68,5 @@ nnoremap > :res -1<CR>
 nnoremap < :res +1<CR>
 
 let g:rainbow_active = 1
+
+au BufNewFile,BufRead *.ejs set filetype=html
