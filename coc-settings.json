@@ -1,6 +1,13 @@
 {
   "coc.preferences.formatOnSave": true,
   "coc.preferences.formatOnType": true,
+  "signature.triggerSignatureWait": 200,
+  "signature.floatConfig": {
+    "border": true,
+    "rounded": true,
+    "maxWidth": 2000,
+    "shadow": true
+  },
   "suggest.labelMaxLength": 30,
   "suggest.noselect": true,
   "suggest.completionItemKindLabels": {
